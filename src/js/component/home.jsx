@@ -1,26 +1,40 @@
 import React from "react";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+const SecondsCounter = (props) => {
+    const number = props.seconds;
+    
+    const ones = number % 10;
+    const tens = Math.floor(number / 10) % 10;
+    const hundreds = Math.floor(number / 100) % 10;
+    const thousands = Math.floor(number / 1000) % 10;
+    const tenthousands = Math.floor(number / 10000) % 10;
+    const hundredthousands = Math.floor(number / 100000) %10;
+    
+    return (
+      <div>
+        <DigitCard>
+        <i class="fa-solid fa-stopwatch"></i>
+        </DigitCard>
+        <DigitCard>
+        {hundredthousands}
+        </DigitCard>
+        <DigitCard>
+        {tenthousands}
+        </DigitCard>
+        <DigitCard>
+        {thousands}
+        </DigitCard>
+        <DigitCard>
+        {hundreds}
+        </DigitCard>
+        <DigitCard>
+        {tens}
+        </DigitCard>
+        <DigitCard>
+        {ones}
+        </DigitCard>
+      </div>
+    );
+  }  
 
-//create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
-		</div>
-	);
-};
-
-export default Home;
+export default SecondsCounter;
