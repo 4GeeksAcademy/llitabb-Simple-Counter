@@ -2,9 +2,9 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(lightgrey 1%, #060606);
+    background: #060606;
     height: 200px;
     width: 130px; 
-    margin: 5px;
-    font-size: 2em; 
+    font-size: 3em; 
+    color: white;
   }

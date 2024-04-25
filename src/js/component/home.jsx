@@ -1,4 +1,5 @@
 import React from "react";
+import DigitCard from "./digitcard";
 
 const SecondsCounter = (props) => {
     const number = props.seconds;
@@ -13,7 +14,7 @@ const SecondsCounter = (props) => {
     return (
       <div>
         <DigitCard>
-        <i class="fa-solid fa-stopwatch"></i>
+        <i className="fa-regular fa-clock"></i>
         </DigitCard>
         <DigitCard>
         {hundredthousands}
