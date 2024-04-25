@@ -1,8 +1,0 @@
-1- Crear componente SecondsCounter.
-2- Al componente SecondsCounter enviarle la variable Seconds.
-3- Dentro del componente SecondsCounter, mostrar variable Seconds.
-4- Tener variable donde almacenar la cantidad de segundos.
-5- Cada vez que pase un segundo a esa variable le tengo que sumar 1.
-6- Cada vez que pase un segundo muestra el componente.
-7- Crear una función que tome un numero y me devuelva los dígitos. Ej. 524 entrada; y salida 5, 2, 4.
-8- Hacer las cambios graficos
