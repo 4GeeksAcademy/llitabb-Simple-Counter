@@ -13,8 +13,6 @@ let digit = 0;
 function Counter() {
     if (digit < 100000) {
         digit = digit + 1;
+        ReactDOM.render(<SecondsCounter seconds={digit} />, document.querySelector("#app"));
     }
 }
-
-//render your react application
-ReactDOM.render(<SecondsCounter seconds={digit} />, document.querySelector("#app"));
